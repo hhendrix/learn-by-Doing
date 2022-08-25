@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct learn_by_DoingApp: App {
+    // MARK: - PROPERTY
+    
+    
+    // MARK: - BODY
     var body: some Scene {
         WindowGroup {
             ContentView()

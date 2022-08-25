@@ -11,6 +11,11 @@
 		2DA46FD72820C789005BD5C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA46FD62820C789005BD5C9 /* ContentView.swift */; };
 		2DA46FD92820C78F005BD5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA46FD82820C78F005BD5C9 /* Assets.xcassets */; };
 		2DA46FDC2820C78F005BD5C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA46FDB2820C78F005BD5C9 /* Preview Assets.xcassets */; };
+		2DA5E5FA2820D04C00744D57 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5E5F92820D04C00744D57 /* CardView.swift */; };
+		2DA5E5FF2820D6E700744D57 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5E5FE2820D6E700744D57 /* CardModel.swift */; };
+		2DA5E6022820D7EC00744D57 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5E6012820D7EC00744D57 /* CardData.swift */; };
+		2DA5E6042821EEAB00744D57 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DA5E6032821EEAB00744D57 /* sound-chime.mp3 */; };
+		2DA5E6072821EF0500744D57 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5E6062821EF0500744D57 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		2DA46FD62820C789005BD5C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2DA46FD82820C78F005BD5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DA46FDB2820C78F005BD5C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2DA46FE22820CA98005BD5C9 /* learn-by-Doing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "learn-by-Doing-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2DA5E5F92820D04C00744D57 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2DA5E5FE2820D6E700744D57 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		2DA5E6012820D7EC00744D57 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		2DA5E6032821EEAB00744D57 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
+		2DA5E6062821EF0500744D57 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +62,15 @@
 		2DA46FD32820C789005BD5C9 /* learn by Doing */ = {
 			isa = PBXGroup;
 			children = (
-				2DA46FD42820C789005BD5C9 /* learn_by_DoingApp.swift */,
-				2DA46FD62820C789005BD5C9 /* ContentView.swift */,
+				2DA5E6052821EEB000744D57 /* Sounds */,
+				2DA5E6002820D7DB00744D57 /* Data */,
+				2DA5E5FD2820D6CD00744D57 /* Model */,
+				2DA5E5FC2820D06D00744D57 /* App */,
+				2DA5E5FB2820D05800744D57 /* View */,
+				2DA46FE22820CA98005BD5C9 /* learn-by-Doing-Info.plist */,
 				2DA46FD82820C78F005BD5C9 /* Assets.xcassets */,
 				2DA46FDA2820C78F005BD5C9 /* Preview Content */,
+				2DA5E6082821EF1B00744D57 /* Utilities */,
 			);
 			path = "learn by Doing";
 			sourceTree = "<group>";
@@ -65,6 +81,55 @@
 				2DA46FDB2820C78F005BD5C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DA5E5FB2820D05800744D57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DA5E5F92820D04C00744D57 /* CardView.swift */,
+				2DA46FD62820C789005BD5C9 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DA5E5FC2820D06D00744D57 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2DA46FD42820C789005BD5C9 /* learn_by_DoingApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2DA5E5FD2820D6CD00744D57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DA5E5FE2820D6E700744D57 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DA5E6002820D7DB00744D57 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2DA5E6012820D7EC00744D57 /* CardData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2DA5E6052821EEB000744D57 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				2DA5E6032821EEAB00744D57 /* sound-chime.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		2DA5E6082821EF1B00744D57 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2DA5E6062821EF0500744D57 /* PlaySound.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA46FDC2820C78F005BD5C9 /* Preview Assets.xcassets in Resources */,
+				2DA5E6042821EEAB00744D57 /* sound-chime.mp3 in Resources */,
 				2DA46FD92820C78F005BD5C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA5E6022820D7EC00744D57 /* CardData.swift in Sources */,
+				2DA5E6072821EF0500744D57 /* PlaySound.swift in Sources */,
 				2DA46FD72820C789005BD5C9 /* ContentView.swift in Sources */,
+				2DA5E5FF2820D6E700744D57 /* CardModel.swift in Sources */,
+				2DA5E5FA2820D04C00744D57 /* CardView.swift in Sources */,
 				2DA46FD52820C789005BD5C9 /* learn_by_DoingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +340,10 @@
 				DEVELOPMENT_TEAM = 7RT4X7Y335;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "learn-by-Doing-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Learn By Doing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -280,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hlenterprises.learn-by-Doing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlenterprises.learnDoing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,9 +370,10 @@
 				DEVELOPMENT_TEAM = 7RT4X7Y335;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "learn-by-Doing-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Learn By Doing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,7 +381,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hlenterprises.learn-by-Doing";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hlenterprises.learnDoing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
